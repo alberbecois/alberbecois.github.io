@@ -1,0 +1,102 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#logo {
+    width: 130px;
+    height: auto;
+    margin: 40px;
+}
+
+#banner {
+    background-color: rgb(34,29,23);
+}
+
+#navbar {
+    background-color: rgb(255, 223, 109);
+}
+
+#footer {
+    background-color: rgb(34,29,23);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24pt;
+    margin-bottom: 40px;
+    padding: 5px 10px 0px 10px;
+    display: inline-block;
+    border: 3px solid rgb(34,29,23);
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20pt;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    padding: 5px 10px 0px 10px;
+    display: inline-block;
+    border: 3px solid rgb(34,29,23);
+}
+
+h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24pt;
+    font-weight: bold;
+    color: white;
+}
+
+.foodtitle {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.content {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.menuright {
+    background-color: rgb(255, 223, 109);
+}
+
+#navbar a {
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    color: rgb(34,29,23);
+}
+
+#navbar a:visited {
+    color: inherit;
+}
+
+#navbar a.currentpage {
+    background-color: rgb(34,29,23);
+    color: white;
+}
+
+#navbar a:hover {
+    background-color: rgb(34,29,23);
+    color: white;
+}
+
+#address {
+    color: white;
+}
+
+#copyright {
+    font-style: italic;
+    text-align: center;
+    margin: 50px 0px;
+}
