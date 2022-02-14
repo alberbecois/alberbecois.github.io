@@ -69,24 +69,36 @@ h4 {
     background-color: rgb(255, 223, 109);
 }
 
-#navbar a {
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 10px 10px 10px;
-    color: rgb(34,29,23);
+nav.navbar.navbar-expand-md.navbar-light {
+    background-color: rgb(255, 223, 109);
+    padding: 0px;
 }
 
-#navbar a:visited {
+nav #toggler span {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(34,29,23, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
+#toggler {
+    border: none;
+} 
+
+nav #links a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(34,29,23);
+    padding: 10px 15px 10px 15px;
+}
+
+nav a:visited {
     color: inherit;
 }
 
-#navbar a.currentpage {
+nav #links a.currentpage {
     background-color: rgb(34,29,23);
     color: white;
 }
 
-#navbar a:hover {
+nav #links a:hover {
     background-color: rgb(34,29,23);
     color: white;
 }
