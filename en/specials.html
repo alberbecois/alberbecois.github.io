@@ -76,7 +76,7 @@
                         
                             
                         <div class="form-group mt-4">
-                            <div class="input-group">
+                            <div class="input-group" id="txtName">
                                 <span class="input-group-text">First and last name</span>
                                 <input id="fName" type="text" aria-label="First name" class="form-control">
                                 <input id="lName" type="text" aria-label="Last name" class="form-control">
@@ -112,7 +112,7 @@
                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
                           <label class="form-check-label" for="exampleCheck1">Yes, I want to receive your weekly specials.</label>
                         </div>
-                        <button id="formSubmit" type="submit" class="btn mt-4">Submit</button>
+                        <button id="formSubmit" type="submit" class="btn mt-4" onclick="return validateForm();">Submit</button>
                       </form>
                 </div>
             </div>
