@@ -25,22 +25,39 @@ var provinces = ["ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "
     let txtFirstName = document.getElementById('fName');
     let txtLastName = document.getElementById('lName');
     let emailInput = document.getElementById('txtEmail');
-
-    // validate poduct
+    let selectedProvince = document.getElementById('selectProvince');
+    let PhoneNum = document.getElementById('txtPhone');
+    
+    // validate first name
     if (txtFirstName.value === '') {
         window.alert('You must enter a first name');
         txtFirstName.focus();
         return false;
     } // end if
     else
-    // validate quantity
+    // validate last name
     if (txtLastName.value === '') {
         window.alert('You must enter a last name');
         txtLastName.focus();
         return false;   
     } // end if
     else
-    // validate shipping method
+
+    // validate province
+    if (selectedProvince.value === '') {
+        window.alert('You must select a province');
+        selectedProvince.focus();
+        return false;   
+    } // end if
+    else
+     // validate phone
+     if (PhoneNum.value === '') {
+        window.alert('You must enter a valid phone number');
+        PhoneNum.focus();
+        return false;   
+    } // end if
+    else
+    // validate email address
     if (emailInput.value === '') {
         window.alert('You must enter a valid email address');
         emailInput.focus();
