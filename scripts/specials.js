@@ -65,7 +65,7 @@ var provinces = ["ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "
     } // end if
     else {
         return true;
-    }
+    } // end else
 
     
-}
+} // end function validateForm
