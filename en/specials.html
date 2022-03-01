@@ -19,10 +19,10 @@
         <link href="../styles/reset.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="../styles/styles.css" type="text/css" rel="stylesheet">
-        <script src="scripts/specials.js"></script>
+        <script src="../scripts/specials.js"></script>
         <script>
             //create startup() function
-            window.addEventListener('load', populateList);
+           // window.addEventListener('load', populateList);
            
         </script>
     </head>
@@ -102,14 +102,14 @@
                                   <option value="1">ON</option>
                                   <option value="2">QC</option>
                                   <option value="3">SK</option> 
-                                  <option value="3">AB</option>
-                                  <option value="3">BC</option>
-                                  <option value="3">NWT</option>
-                                  <option value="3">YK</option>
-                                  <option value="3">NB</option>
-                                  <option value="3">NS</option>
-                                  <option value="3">PEI</option>
-                                  <option value="3">NU</option>
+                                  <option value="4">AB</option>
+                                  <option value="5">BC</option>
+                                  <option value="6">NWT</option>
+                                  <option value="7">YK</option>
+                                  <option value="8">NB</option>
+                                  <option value="9">NS</option>
+                                  <option value="10">PEI</option>
+                                  <option value="11">NU</option>
                                 <!--"ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "NU"-->
                                 </select>
                               </div>
@@ -163,6 +163,22 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-       
+        <script>
+           
+            function populateList() {
+
+var select = document.getElementById("selectProvince");
+var provinces = ["ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "NU"];
+    
+    for(var i = 0; i < provinces.length; i++) {
+    var opt = document.createElement('option');
+    opt.innerHTML = provinces[i];
+    opt.value = provinces[i];
+    sel.appendChild(opt);
+    }
+    
+} // end of function populateList
+//alert('hello!');
+        </script>
     </body>
 </html>

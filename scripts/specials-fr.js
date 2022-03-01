@@ -30,35 +30,35 @@ var provinces = ["ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "
     
     // validate first name
     if (txtFirstName.value === '') {
-        window.alert('You must enter a first name');
+        window.alert('SVP entrer votre prenom');
         txtFirstName.focus();
         return false;
     } // end if
     else
     // validate last name
     if (txtLastName.value === '') {
-        window.alert('You must enter a last name');
+        window.alert('SVP entrer votre nom');
         txtLastName.focus();
         return false;   
     } // end if
     else
     // validate email address
     if (emailInput.value === '') {
-        window.alert('You must enter a valid email address');
+        window.alert('SVP entrer un courriel valide');
         emailInput.focus();
         return false;
     } // end if
     else
      // validate phone
      if (PhoneNum.value === '') {
-        window.alert('You must enter a valid phone number');
+        window.alert('SVP enter un numéro de téléphone valide');
         PhoneNum.focus();
         return false;   
     } // end if
     else
      // validate province
-     if (selectedProvince.value === 'Select...') {
-        window.alert('You must select a province');
+     if (selectedProvince.value === 'Selection...') {
+        window.alert('SVP choisir une province');
         selectedProvince.focus();
         return false;   
     } // end if
