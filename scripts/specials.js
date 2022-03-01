@@ -2,7 +2,7 @@
 
 /* function to populate the province dropdown menu
 */
-function populateList() {
+/*function populateList() {
 var select = document.getElementById("selectProvince");
 var provinces = ["ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "NU"];
      //alert('hi there');
@@ -14,7 +14,7 @@ var provinces = ["ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "
     }
    
 } // end of function populateList
-
+*/
 
 /// validate name form
 /**

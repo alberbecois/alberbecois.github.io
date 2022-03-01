@@ -68,15 +68,52 @@
                     </p>
                     <form>
                         <div class="form-group mt-4">
-                          <label for="exampleInputEmail1">Courriel</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer courriel">
-                          <small id="emailHelp" class="form-text text-muted">On ne partage votre courriel avec personne.</small>
-                        </div>
+                            <div class="input-group" id="txtName">
+                                <span class="input-group-text">Nom et Surnom</span>
+                                <input id="fName" type="text" aria-label="First name" class="form-control">
+                                <input id="lName" type="text" aria-label="Last name" class="form-control">
+                              </div>
+                              <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="inputGroup-sizing-default">Courriel</span>
+                                </div>
+                                <input id="txtEmail" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Enter email">
+                              </div>
+                              <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="inputGroup-sizing-default">Téléphone</span>
+                                </div>
+                                <input id="txtPhone" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="514-555-5555">
+                              </div>
+                              <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <label class="input-group-text" for="inputGroupSelect01">Province</label>
+                                </div>
+                                <select class="custom-select" id="selectProvince">
+                                  <option selected>Selection...</option>
+                                  <option value="1">ON</option>
+                                  <option value="2">QC</option>
+                                  <option value="3">SK</option> 
+                                  <option value="3">AB</option>
+                                  <option value="3">BC</option>
+                                  <option value="3">NWT</option>
+                                  <option value="3">YK</option>
+                                  <option value="3">NB</option>
+                                  <option value="3">NS</option>
+                                  <option value="3">PEI</option>
+                                  <option value="3">NU</option>
+                                <!--"ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "NU"-->
+                                </select>
+                              </div>
+                              
+                                <small id="emailHelp" class="form-text text-muted">On ne partage votre courriel ou numéro avec personne.</small>
+                            </div>
+
                         <div class="form-check">
                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
                           <label class="form-check-label" for="exampleCheck1">Oui, je veux recevoir vos spéciaux de la semaine.</label>
                         </div>
-                        <button type="submit" class="btn mt-4">Soumettre</button>
+                        <button id="formSubmit" type="submit" class="btn mt-4" onclick="return validateForm();">Soumettre</button>
                       </form>
                 </div>
             </div>
