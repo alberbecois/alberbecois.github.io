@@ -19,6 +19,23 @@ var provinces = ["Select...", "ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "
     document.getElementById('selectProvince').innerHTML = results;
 } // end of function populateList
 
+// function to verify phone number
+function verifyPhone(){
+    var phoneNum = document.getElementById("txtPhone");
+    
+    phoneNum.addEventListener('input', () => {
+      phoneNum.setCustomValidity('');
+      phoneNum.checkValidity();
+    });
+    
+    phoneNum.addEventListener('invalid', () => {
+      if(phoneNum.value === '') {
+        phoneNum.setCustomValidity('Enter phone number!');
+      } else {
+        phoneNum.setCustomValidity('Enter phone number in this format: 123-456-7890');
+      }
+    });
+    } // end of function verifyPhone
 
 /// validate name form
 /**
@@ -56,13 +73,6 @@ var provinces = ["Select...", "ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "
         window.alert('You must enter a valid email address');
         emailInput.focus();
         return false;
-    } // end if
-    else
-     // validate phone
-     if (phoneNum.value === '') {
-        window.alert('You must enter a valid phone number');
-        phoneNum.focus();
-        return false;   
     } // end if
     else
      // validate province

@@ -23,6 +23,7 @@
         <script>
             //create startup() function
             window.addEventListener('load', populateList);
+            window.addEventListener('load', verifyPhone);
            
         </script>
     </head>
@@ -91,7 +92,9 @@
                                 <div class="input-group-prepend">
                                   <span class="input-group-text" id="inputGroup-sizing-default">Phone</span>
                                 </div>
-                                <input id="txtPhone" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="514-555-5555">
+                                <input id="txtPhone" type="tel" class="form-control" aria-label="Default" 
+                                aria-describedby="inputGroup-sizing-default" placeholder="514-555-5555" 
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                               </div>
                               <div class="input-group mb-3">
                                 <div class="input-group-prepend">
