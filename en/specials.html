@@ -77,83 +77,87 @@
             </div>
         </nav>
 
-        <!-- Content -->
-        <div class="container content">
-            <div class="row">
-                <div class="col">
-                    <h1>Weekly Specials</h1>
-                </div>
+       <!-- Content -->
+       <div class="container content">
+        <div class="row">
+            <div class="col">
+                <h1>Weekly Specials</h1>
             </div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="../images/panini.jpeg" class="img-fluid rounded" alt="image of the interior of the restaurant with tables and counter">
-                </div>
-                <div class="col-md-6 mt-4 mt-md-0">
-                    <p>
-                        This weeks special is a grilled panini. This delicious sandwich is made with Montréal bread, fresh tomatoes, spinach and
-                        onions, creamy feta cheese and topped off with our awesome in-house sauce. A great choice for a healthy filling lunch, and with your 
-                        choice of side (fries or green salad), this week it is only <strong>$9.99</strong> for the trio.
-                    </p>
-                    <p>
-                        If you want to keep up to date on our weekly specials, join our mailing list using the form below:
-                    </p>
-                    <form>
-                        
-                            
-                        <div class="form-group mt-4">
-                            <div class="input-group" id="txtName">
-                                <span class="input-group-text">First and last name</span>
-                                <input id="fName" type="text" aria-label="First name" class="form-control">
-                                <input id="lName" type="text" aria-label="Last name" class="form-control">
-                              </div>
-                              <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
-                                </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="../images/panini.jpeg" class="img-fluid rounded" alt="image of the interior of the restaurant with tables and counter">
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+                <p>
+                    This weeks special is a grilled panini. This delicious sandwich is made with Montréal bread, fresh tomatoes, spinach and
+                    onions, creamy feta cheese and topped off with our awesome in-house sauce. A great choice for a healthy filling lunch, and with your 
+                    choice of side (fries or green salad), this week it is only <strong>$9.99</strong> for the trio.
+                </p>
+                <p>
+                    If you want to keep up to date on our weekly specials, join our mailing list using the form below:
+                </p>
+                <form>
+                    <table>
+                        <tr>
+                            <th class="input-group-text">First name</th>
+                            <td>
+                                <input id="fName" type="text" aria-label="Default" class="form-control" placeholder="Enter first name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="input-group-text">Last name</th>
+                            <td>
+                                <input id="lName" type="text" aria-label="Default" class="form-control" placeholder="Enter last name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="input-group-text" id="inputGroup-sizing-default">Email</th>
+                            <td>
                                 <input id="txtEmail" type="email" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Enter email">
-                              </div>
-                              <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text" id="inputGroup-sizing-default">Phone</span>
-                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="input-group-text" id="inputGroup-sizing-default">Phone</th>
+                            <td>
                                 <input id="txtPhone" type="tel" class="form-control" aria-label="Default" 
                                 aria-describedby="inputGroup-sizing-default" placeholder="514-555-5555" 
                                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                              </div>
-                              <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                  <label class="input-group-text" for="inputGroupSelect01">Province</label>
-                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="input-group-text" for="inputGroupSelect01">Province</th>
+                            <td>
                                 <select class="custom-select" id="selectProvince">
 
-                                  <option selected>Select...</option>
-                                  <option value="1" id="prov1"></option>
-                                  <option value="2" id="prov2"></option>
-                                  <option value="3" id="prov3"></option> 
-                                  <option value="4" id="prov4"></option>
-                                  <option value="5" id="prov5"></option>
-                                  <option value="6" id="prov6"></option>
-                                  <option value="7" id="prov7"></option>
-                                  <option value="8" id="prov8"></option>
-                                  <option value="9" id="prov9"></option>
-                                  <option value="10" id="prov10"></option>
-                                  <option value="11" id="prov11"></option>
-                                <!--"ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "NU"-->
-                                </select>
-                              </div>
-                              
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email or phone number with anyone.</small>
-                            </div>
-
-                        <div class="form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Yes, I want to receive your weekly specials.</label>
-                        </div>
-                        <button id="formSubmit" type="submit" class="btn mt-4" onclick="return validateForm();">Submit</button>
-                      </form>
-                </div>
+                                    <option selected>Select...</option>
+                                    <option value="1" id="prov1"></option>
+                                    <option value="2" id="prov2"></option>
+                                    <option value="3" id="prov3"></option> 
+                                    <option value="4" id="prov4"></option>
+                                    <option value="5" id="prov5"></option>
+                                    <option value="6" id="prov6"></option>
+                                    <option value="7" id="prov7"></option>
+                                    <option value="8" id="prov8"></option>
+                                    <option value="9" id="prov9"></option>
+                                    <option value="10" id="prov10"></option>
+                                    <option value="11" id="prov11"></option>
+                                  <!--"ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "NU"-->
+                                  </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1"> Yes, I want to receive your weekly specials
+                            </td>
+                        </tr>
+                    </table>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email or phone number with anyone.</small>
+                    <button id="formSubmit" type="submit" class="btn mt-4" onclick="return validateForm();">Submit</button>
+                  </form>
             </div>
         </div>
+    </div>
 
         <!-- Footer -->
         <section id="footer">
