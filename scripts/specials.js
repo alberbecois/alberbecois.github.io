@@ -33,6 +33,7 @@ var provinces = ["Select...", "ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "
     //var emailResult = emailRGEX.test(emailInput);
     let selectedProvince = document.getElementById('selectProvince');
     let phoneNum = document.getElementById('txtPhone');
+    //var phoneLength = phoneNum.length;
     //var phoneRGEX = /^\(?[\d]{3}\)?[\s-]?[\d]{3}[\s-]?[\d]{4}$/;
     //var phoneResult = phoneRGEX.test(phoneNum);
     
@@ -58,7 +59,7 @@ var provinces = ["Select...", "ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "
     } // end if
     else
      // validate phone
-     if (phoneNum.value == '') {
+     if (phoneNum.value === '') {
         window.alert('You must enter a valid phone number');
         phoneNum.focus();
         return false;   
