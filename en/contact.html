@@ -25,7 +25,26 @@
         <!-- Banner -->
         <section id="banner">
             <div class="container">
-                <img src="../images/saucyfrites_white.png" id="logo" alt="saucy fries logo image">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="../images/saucyfrites_white.png" id="logo" alt="saucy fries logo image">
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Weather API AJAX/JQUERY-->
+                        <div id="Weather">
+                            <div class="weathercard">
+                                <div class="weather loading">
+                                    <h2 class="city"></h2>
+                                    <h1 class="temp">°C</h1>
+                                    <div class="flex">
+                                        <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                                        <div class="description"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         
