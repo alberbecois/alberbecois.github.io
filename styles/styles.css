@@ -54,6 +54,11 @@ h4 {
     color: white;
 }
 
+h5 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18pt;
+}
+
 .foodtitle {
     font-family: 'Bebas Neue', cursive;
     font-weight: bold;
@@ -130,7 +135,8 @@ nav #links a:hover {
     font-family: 'Open Sans', sans-serif;
     font-size: 10%;
 }
-  .card {
+
+.card {
     background: rgb(34,29,23);
     color: white;
     padding: 2em;
@@ -138,36 +144,51 @@ nav #links a:hover {
     width: 40%;
     max-width: 420px;
     margin: 1em;
-  }
-  
-  
-  h1.temp {
+}
+
+
+h1.temp {
     margin: 0;
     margin-bottom: 0.4em;
-  }
-  
-  .flex {
+}
+
+.flex {
     display: flex;
     align-items: center;
-  }
-  
-  .description {
+}
+
+.description {
     text-transform: capitalize;
     margin-left: 8px;
-  }
-  
-  .weather.loading {
+}
+
+.weather.loading {
     visibility: hidden;
     max-height: 20px;
     position: relative;
-  }
-  
-  .weather.loading:after {
+}
+
+.weather.loading:after {
     visibility: visible;
     content: "Loading...";
     color: white;
     position: absolute;
     top: 0;
     left: 20px;
-  }
+}
 
+#order-menu {
+    background-color: rgb(255, 223, 109);
+}
+
+.card-header {
+    background-color: rgb(255, 223, 109);
+}
+
+.nav-link {
+    color: rgb(34,29,23);
+}
+
+.nav-link:hover {
+    color: inherit;
+}
