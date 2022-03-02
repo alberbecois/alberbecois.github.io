@@ -19,6 +19,11 @@
         <link href="../styles/reset.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="../styles/styles.css" type="text/css" rel="stylesheet">
+        <!-- Scripts -->
+        <script src="../scripts/about.js"></script>
+        <script>
+            window.addEventListener('load', setInterval('eventClock()', 1000));
+        </script>
     </head>
     
     <body>
@@ -73,9 +78,50 @@
                     </p>
                 </div>
             </div>
+
             <div class="row align-items-center mt-md-5">
                 <div class="col-md-6 mt-4 mt-md-0">
+                    <h1>Deuxième emplacement !</h1>
+                    <p>
+                        On amène Saucy Frites dans le Vieux Rosemont! Nous ouvrirons nos portes le samedi 7 mai - 
+                        juste à temps pour la saison des terrasses ! Après sept merveilleuses années sur le Plateau, 
+                        nous avons décidé qu'il était temps d'amener nos frites raffinées dans un nouveau quartier. 
+                        Nous avons hâte de vous accueillir.
+                    </p>
+
+                    <form id="clockform" name="clockform" action="#" >
+                        <div id="countdown">
+                            <h3>Compte à rebours!</h3>
+                            <p>
+                                <input type="text" size="2" id="txtDaysLeft" name="txtDaysLeft" /> Jours
+                                <input type="text" size="2" id="txtHrLeft" name="txtHrLeft" /> Heures
+                                <input type="text" size="2" id="txtMinLeft" name="txtMinLeft" /> Minutes
+                                <input type="text" size="2" id="txtSecLeft" name="txtSecLeft" /> Secondes!
+                            </p>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 mx-auto mb-5 mt-2 mb-md-0 mt-md-0" >
+                    <div>
+                        <img src="../images/paint.jpg" class="img-fluid" alt="Rouleau à peindre avec de la peinture jaune sur fond blanc" />
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center mt-md-5">
+                <div class="col">
                     <h1>Nos partenaires</h1>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 mx-auto mt-4 mt-md-0">
+                    <div>
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lWS-veyxGWg" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mx-auto mt-4 mt-md-0" >
                     <p>
                         Soutenir les agriculteurs québécois est d’une grande importance pour nous - c'est pourquoi 
                         nous nous sommes associés avec Patates Dolbec! Nos amis chez Patates Dolbec sont tout aussi 
@@ -83,17 +129,8 @@
                         leur ferme idyllique :
                     </p>
                 </div>
-                <div class="col-md-6 mx-auto mt-4 mt-md-0" >
-                    <div>
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lWS-veyxGWg" allowfullscreen></iframe>
-                    </div>
-                </div>
-                    
-                    </div>
-                </div>
             </div>
+        </div>
 
         <!-- Footer -->
         <section id="footer">
