@@ -2,19 +2,23 @@
 
 /* function to populate the province dropdown menu
 */
-/*function populateList() {
-var select = document.getElementById("selectProvince");
-var provinces = ["ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "NU"];
-     //alert('hi there');
-    for(var i = 0; i < provinces.length; i++) {
-    var opt = document.createElement('option');
-    opt.innerHTML = provinces[i];
-    opt.value = provinces[i];
-    sel.appendChild(opt);
-    }
-   
+function populateList() {
+//create the array for the dropdown menu list
+var provinces = ["Select...", "ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "NU"];
+
+    // pass the contents of the array into the list elements
+    let pLen = provinces.length;
+
+    let results = "<ul>";
+       for (let i = 0; i < pLen; i++) {
+          results += "<option>" + provinces[i] + "</option>";
+       }
+       results += "</ul>";
+
+
+    document.getElementById('selectProvince').innerHTML = results;
 } // end of function populateList
-*/
+
 
 /// validate name form
 /**
@@ -25,8 +29,12 @@ var provinces = ["ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "
     let txtFirstName = document.getElementById('fName');
     let txtLastName = document.getElementById('lName');
     let emailInput = document.getElementById('txtEmail');
+    var emailRGEX = /^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$/i;
+    var emailResult = emailRGEX.test(emailInput);
     let selectedProvince = document.getElementById('selectProvince');
-    let PhoneNum = document.getElementById('txtPhone');
+    let phoneNum = document.getElementById('txtPhone');
+    var phoneRGEX = /^\(?[\d]{3}\)?[\s-]?[\d]{3}[\s-]?[\d]{4}$/;
+    var phoneResult = phoneRGEX.test(phoneNum);
     
     // validate first name
     if (txtFirstName.value === '') {
@@ -43,16 +51,16 @@ var provinces = ["ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "
     } // end if
     else
     // validate email address
-    if (emailInput.value === '') {
+    if (emailResult == false) {
         window.alert('You must enter a valid email address');
         emailInput.focus();
         return false;
     } // end if
     else
      // validate phone
-     if (PhoneNum.value === '') {
+     if (phoneResult == false) {
         window.alert('You must enter a valid phone number');
-        PhoneNum.focus();
+        phoneNum.focus();
         return false;   
     } // end if
     else
