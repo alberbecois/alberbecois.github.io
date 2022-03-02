@@ -29,12 +29,12 @@ var provinces = ["Select...", "ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "
     let txtFirstName = document.getElementById('fName');
     let txtLastName = document.getElementById('lName');
     let emailInput = document.getElementById('txtEmail');
-    var emailRGEX = /^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$/i;
-    var emailResult = emailRGEX.test(emailInput);
+    //var emailRGEX = /^[\w\-\.\+]+\@[a-zA-Z0-9\. \-]+\.[a-zA-z0-9]{2,4}$/;
+    //var emailResult = emailRGEX.test(emailInput);
     let selectedProvince = document.getElementById('selectProvince');
     let phoneNum = document.getElementById('txtPhone');
-    var phoneRGEX = /^\(?[\d]{3}\)?[\s-]?[\d]{3}[\s-]?[\d]{4}$/;
-    var phoneResult = phoneRGEX.test(phoneNum);
+    //var phoneRGEX = /^\(?[\d]{3}\)?[\s-]?[\d]{3}[\s-]?[\d]{4}$/;
+    //var phoneResult = phoneRGEX.test(phoneNum);
     
     // validate first name
     if (txtFirstName.value === '') {
@@ -51,14 +51,14 @@ var provinces = ["Select...", "ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "
     } // end if
     else
     // validate email address
-    if (emailResult == false) {
+    if (emailInput.value === '') {
         window.alert('You must enter a valid email address');
         emailInput.focus();
         return false;
     } // end if
     else
      // validate phone
-     if (phoneResult == false) {
+     if (phoneNum.value == '') {
         window.alert('You must enter a valid phone number');
         phoneNum.focus();
         return false;   
