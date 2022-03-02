@@ -8,7 +8,7 @@
         <meta name="description" content="Saucy Frites makes classic fast food updated for modern 
             tastes with only the freshest ingredients." />
         <meta name="keywords" content="fries, poutine, vegan, burgers, fresh, foodie, fastfood" />  
-        <title>Home</title>
+        <title>About</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -19,6 +19,10 @@
         <link href="../styles/reset.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="../styles/styles.css" type="text/css" rel="stylesheet">
+        <script src="../scripts/about.js"></script>
+        <script>
+            window.addEventListener('load', setInterval('eventClock()', 1000));
+        </script>
     </head>
     
     <body>
@@ -46,52 +50,85 @@
             </div>
         </nav>
 
- <!-- Content -->
- <div class="container content">
-    <div class="row">
-        <div class="col">
-            <h1>Our Story</h1>
-        </div>
-    </div>
-    <div class="row align-items-center">
-        <div class="col-md-6 mx-auto mb-5 mt-2 mb-md-0 mt-md-0">
-            <img src="../images/resto.jpg" class="img-fluid" alt="image of the interior of the restaurant with tables and counter">
-        </div>
-        <div class="col-md-6">
-            <p>
-                Serving fries with a passion since 2014, Saucy Frites is a Montreal institution. When Maude
-                Tremblay started her restaurant she knew she had a calling to line the bellies of the rowdy 
-                drunks pouring out of the many bars on St-Laurent at closing time, but she also knew she 
-                wanted to make it fancy. That's why Saucy Frites uses nothing but the finest ingredients 
-                slathered in their trademark sauce on a bed of golden crispy fries. C'est bon!
-            </p>
-            <p>
-                Located in the heart of Montreal's trendy Plateau neighbourhood, Saucy Frites invites you
-                to discover the gourmet possibilities of Quebec's traditional dish. Thank you for supporting
-                local businesses.
-            </p>
-        </div>
-    </div>
-    <div class="row align-items-center mt-md-5">
-        <div class="col-md-6 mt-4 mt-md-0">
-            <h1>Our Partners</h1>
-            <p>
-                Supporting Quebec farmers is important to us - that's why we've partnered with Patates Dolbec! 
-                The folks at Patates Dolbec are just as passionate about potatoes as we are, it's a match made in heaven.
-                Take a tour of their idyllic farm:
-            </p>
-        </div>
-        <div class="col-md-6 mx-auto mt-4 mt-md-0" >
-            <div>
-            <!-- 16:9 aspect ratio -->
-            <div class="embed-responsive embed-responsive-16by9">
-             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lWS-veyxGWg" allowfullscreen></iframe>
+        <!-- Content -->
+        <div class="container content">
+            <div class="row">
+                <div class="col">
+                    <h1>Our Story</h1>
+                </div>
             </div>
-         </div>
-            
+            <div class="row align-items-center">
+                <div class="col-md-6 mx-auto mb-5 mt-2 mb-md-0 mt-md-0">
+                    <img src="../images/resto.jpg" class="img-fluid" alt="image of the interior of the restaurant with tables and counter">
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        Serving fries with a passion since 2014, Saucy Frites is a Montreal institution. When Maude
+                        Tremblay started her restaurant she knew she had a calling to line the bellies of the rowdy 
+                        drunks pouring out of the many bars on St-Laurent at closing time, but she also knew she 
+                        wanted to make it fancy. That's why Saucy Frites uses nothing but the finest ingredients 
+                        slathered in their trademark sauce on a bed of golden crispy fries. C'est bon!
+                    </p>
+                    <p>
+                        Located in the heart of Montreal's trendy Plateau neighbourhood, Saucy Frites invites you
+                        to discover the gourmet possibilities of Quebec's traditional dish. Thank you for supporting
+                        local businesses.
+                    </p>
+                </div>
             </div>
-    </div>
-</div>
+
+            <div class="row align-items-center mt-md-5">
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <h1>New Location!</h1>
+                    <p>
+                        We're bringing Saucy Frites to Vieux Rosemont! We will be opening our doors on 
+                        Saturday May 7th - just in time for patio season! After seven wonderful years in the Plateau, 
+                        we decided it was time to bring our fancy fries to a new neighborhood. We can't wait to welcome
+                        you. 
+                    </p>
+
+                    <form id="clockform" name="clockform" action="#" >
+                        <div id="countdown">
+                            <h3>Countdown to Grand Opening!</h3>
+                            <p>
+                                <input type="text" size="2" id="txtDaysLeft" name="txtDaysLeft" /> Days
+                                <input type="text" size="2" id="txtHrLeft" name="txtHrLeft" /> Hours
+                                <input type="text" size="2" id="txtMinLeft" name="txtMinLeft" /> Minutes
+                                <input type="text" size="2" id="txtSecLeft" name="txtSecLeft" /> Seconds!
+                            </p>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 mx-auto mb-5 mt-2 mb-md-0 mt-md-0" >
+                    <div>
+                        <img src="../images/paint.jpg" class="img-fluid" alt="paint roller with yellow paint on white background" />
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center mt-md-5">
+                <div class="col">
+                    <h1>Our Partners</h1>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 mx-auto mt-4 mt-md-0">
+                    <div>
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lWS-veyxGWg" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mx-auto mt-4 mt-md-0" >
+                    <p>
+                        Supporting Quebec farmers is important to us - that's why we've partnered with Patates Dolbec! 
+                        The folks at Patates Dolbec are just as passionate about potatoes as we are, it's a match made in heaven.
+                        Take a tour of their idyllic farm!
+                    </p>
+                </div>
+            </div>
+        </div>
+
 
         <!-- Footer -->
         <section id="footer">
