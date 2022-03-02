@@ -136,7 +136,7 @@ nav #links a:hover {
     font-size: 10%;
 }
 
-.card {
+.weathercard {
     background: rgb(34,29,23);
     color: white;
     padding: 2em;
