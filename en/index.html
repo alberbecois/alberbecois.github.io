@@ -14,11 +14,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <!-- Style Sheets -->
         <link href="../styles/reset.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="../styles/styles.css" type="text/css" rel="stylesheet">
+        <script src="../scripts/Index.js" defer></script>
     </head>
     
     <body>
@@ -26,6 +27,19 @@
         <section id="banner">
             <div class="container">
                 <img src="../images/saucyfrites_white.png" id="logo" alt="saucy fries logo image">
+                <!-- Weather API AJAX/JQUERY-->
+                <div id="Weather">
+                    <div class="weathercard">
+                      <div class="weather loading">
+                        <h2 class="city"></h2>
+                        <h1 class="temp">°C</h1>
+                        <div class="flex">
+                          <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                          <div class="description"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </section>
 
