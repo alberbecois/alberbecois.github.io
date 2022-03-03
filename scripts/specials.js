@@ -49,7 +49,7 @@ function verifyPhone(){
     //var emailRGEX = /^[\w\-\.\+]+\@[a-zA-Z0-9\. \-]+\.[a-zA-z0-9]{2,4}$/;
     //var emailResult = emailRGEX.test(emailInput);
     let selectedProvince = document.getElementById('selectProvince');
-    let phoneNum = document.getElementById('txtPhone');
+    //let phoneNum = document.getElementById('txtPhone');
     //var phoneLength = phoneNum.length;
     //var phoneRGEX = /^\(?[\d]{3}\)?[\s-]?[\d]{3}[\s-]?[\d]{4}$/;
     //var phoneResult = phoneRGEX.test(phoneNum);
@@ -73,6 +73,13 @@ function verifyPhone(){
         window.alert('You must enter a valid email address');
         emailInput.focus();
         return false;
+    } // end if
+    else
+    // validate phone
+    if (PhoneNum.value === '') {
+      window.alert('You must enter a valid phone number');
+      PhoneNum.focus();
+      return false;   
     } // end if
     else
      // validate province
