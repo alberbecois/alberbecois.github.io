@@ -1,5 +1,5 @@
 
-
+/*jshint esversion: 6 */
 /* function to populate the province dropdown menu
 */
 function populateList() {
