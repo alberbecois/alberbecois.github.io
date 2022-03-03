@@ -23,7 +23,7 @@
         <link href="../styles/styles.css" type="text/css" rel="stylesheet">
         
         <!-- Scripts -->
-        <script src="../scripts/about.js"></script>
+        <script src="../scripts/countdown.js"></script>
         <script>
             window.addEventListener('load', setInterval('eventClock()', 1000));
         </script>
@@ -55,7 +55,26 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-12 mx-auto">
+                        <div id="Event">
+                            <div class="eventcard">
+                                    <form id="clockform" name="clockform" action="#" >
+                                        <div id="countdown">
+                                            <p> Countdown to new Rosemont location opening!
+                                                <input type="text" size="2" id="txtDaysLeft" name="txtDaysLeft" /> Days
+                                                <input type="text" size="2" id="txtHrLeft" name="txtHrLeft" /> Hours
+                                                <input type="text" size="2" id="txtMinLeft" name="txtMinLeft" /> Minutes
+                                                <input type="text" size="2" id="txtSecLeft" name="txtSecLeft" /> Seconds!
+                                            </p>
+                                        </div>
+                                    </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
         </section>
 
         <!-- Navbar -->

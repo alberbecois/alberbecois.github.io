@@ -19,8 +19,13 @@
         <link href="../styles/reset.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="../styles/styles.css" type="text/css" rel="stylesheet">
-        
+        <!-- Scripts -->
         <script src="../scripts/weatherFR.js" defer></script>
+        <script src="../scripts/countdown.js"></script>
+        <script>
+            window.addEventListener('load', setInterval('eventClock()', 1000));
+        </script>
+        
     </head>
     
     <body>
@@ -43,6 +48,24 @@
                                         <div class="description"></div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mx-auto">
+                        <div id="Event">
+                            <div class="eventcard">
+                                    <form id="clockform" name="clockform" action="#" >
+                                        <div id="countdown">
+                                            <p> Compte à rebours pour l'ouverture du nouveau resto dans Rosemont!
+                                                <input type="text" size="2" id="txtDaysLeft" name="txtDaysLeft" /> Jours
+                                                <input type="text" size="2" id="txtHrLeft" name="txtHrLeft" /> Heures
+                                                <input type="text" size="2" id="txtMinLeft" name="txtMinLeft" /> Minutes
+                                                <input type="text" size="2" id="txtSecLeft" name="txtSecLeft" /> Secondes!
+                                            </p>
+                                        </div>
+                                    </form>
                             </div>
                         </div>
                     </div>
