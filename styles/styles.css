@@ -129,7 +129,7 @@ nav #links a:hover {
 #weather {
     display: flex;
     justify-content:right;
-    align-items: right;
+    align-items: end;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
     font-size: 10%;
@@ -144,7 +144,7 @@ nav #links a:hover {
 #event {
     display: flex;
     justify-content: right;
-    align-items: right;
+    align-items: end;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
     font-size: 10%;
