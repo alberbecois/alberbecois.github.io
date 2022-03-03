@@ -23,8 +23,7 @@
         <script src="../scripts/weatherFR.js" defer></script>
         <script>
             //create startup() function
-           window.addEventListener('load', populateList);
-           //window.addEventListener('load', verifyPhone);
+           // window.addEventListener('load', populateList);
            
         </script>
     </head>
@@ -94,62 +93,53 @@
                         Si vous voulez demeurer à jour sur nos spéciaux, simplement soumettre votre courriel:
                     </p>
                     <form>
-                        <table>
-                            <tr>
-                                <th class="input-group-text">Prénom</th>
-                                <td>
-                                    <input id="fName" type="text" aria-label="Default" class="form-control" placeholder="Entrer votre prénom">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="input-group-text">Nom</th>
-                                <td>
-                                    <input id="lName" type="text" aria-label="Default" class="form-control" placeholder="Entrer votre nom">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="input-group-text" id="inputGroup-sizing-default">Courriel</th>
-                                <td>
-                                    <input id="txtEmail" type="email" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Entrer courriel">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="input-group-text" id="inputGroup-sizing-default">Téléphone</th>
-                                <td>
-                                    <input id="txtPhone" type="tel" class="form-control" aria-label="Default" 
-                                    aria-describedby="inputGroup-sizing-default" placeholder="514-555-5555" 
-                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="input-group-text" for="inputGroupSelect01">Province</th>
-                                <td>
-                                    <select class="custom-select" id="selectProvince">
-    
-                                        <option selected>Selection...</option>
-                                        <option value="1" id="prov1"></option>
-                                        <option value="2" id="prov2"></option>
-                                        <option value="3" id="prov3"></option> 
-                                        <option value="4" id="prov4"></option>
-                                        <option value="5" id="prov5"></option>
-                                        <option value="6" id="prov6"></option>
-                                        <option value="7" id="prov7"></option>
-                                        <option value="8" id="prov8"></option>
-                                        <option value="9" id="prov9"></option>
-                                        <option value="10" id="prov10"></option>
-                                        <option value="11" id="prov11"></option>
-                                      <!--"ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "NU"-->
-                                      </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1"> Oui, je veut reçevoir vos spécials de la semaine
-                                </td>
-                            </tr>
-                        </table>
-                        <small id="emailHelp" class="form-text text-muted">On ne partage jamais votre information.</small>
-                        <button id="formSubmit" type="submit" class="btn mt-4" onclick="return validateForm();verifyPhone();">Soumettre</button>
+                        <div class="form-group mt-4">
+                            <div class="input-group" id="txtName">
+                                <span class="input-group-text">Nom et Prenom</span>
+                                <input id="fName" type="text" aria-label="First name" class="form-control">
+                                <input id="lName" type="text" aria-label="Last name" class="form-control">
+                              </div>
+                              <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="inputGroup-sizing-default">Courriel</span>
+                                </div>
+                                <input id="txtEmail" type="email" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Enter email">
+                              </div>
+                              <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="inputGroup-sizing-default">Téléphone</span>
+                                </div>
+                                <input id="txtPhone" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="514-555-5555">
+                              </div>
+                              <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <label class="input-group-text" for="inputGroupSelect01">Province</label>
+                                </div>
+                                <select class="custom-select" id="selectProvince">
+                                  <option selected>Selection...</option>
+                                  <option value="1">ON</option>
+                                  <option value="2">QC</option>
+                                  <option value="3">SK</option> 
+                                  <option value="3">AB</option>
+                                  <option value="3">BC</option>
+                                  <option value="3">NWT</option>
+                                  <option value="3">YK</option>
+                                  <option value="3">NB</option>
+                                  <option value="3">NS</option>
+                                  <option value="3">PEI</option>
+                                  <option value="3">NU</option>
+                                <!--"ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "NU"-->
+                                </select>
+                              </div>
+                              
+                                <small id="emailHelp" class="form-text text-muted">On ne partage votre courriel ou numéro avec personne.</small>
+                            </div>
+
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Oui, je veux recevoir vos spéciaux de la semaine.</label>
+                        </div>
+                        <button id="formSubmit" type="submit" class="btn mt-4" onclick="return validateForm();">Soumettre</button>
                       </form>
                 </div>
             </div>

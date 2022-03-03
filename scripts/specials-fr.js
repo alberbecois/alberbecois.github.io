@@ -2,40 +2,19 @@
 
 /* function to populate the province dropdown menu
 */
-function populateList() {
-    //create the array for the dropdown menu list
-    var provinces = ["Selection...", "ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "NU"];
-    
-        // pass the contents of the array into the list elements
-        let pLen = provinces.length;
-    
-        let results = "<ul>";
-           for (let i = 0; i < pLen; i++) {
-              results += "<option>" + provinces[i] + "</option>";
-           }
-           results += "</ul>";
-    
-    
-        document.getElementById('selectProvince').innerHTML = results;
-    } // end of function populateList
-
-// function to verify phone number
-function verifyPhone(){
-    var phoneNum = document.getElementById("txtPhone");
-    
-    phoneNum.addEventListener('input', () => {
-      phoneNum.setCustomValidity('');
-      phoneNum.checkValidity();
-    });
-    
-    phoneNum.addEventListener('invalid', () => {
-      if(phoneNum.value === '') {
-        phoneNum.setCustomValidity('Entrer une numéro de téléphone!');
-      } else {
-        phoneNum.setCustomValidity('Entrer le numéro de téléphone dans cet format: 123-456-7890');
-      }
-    });
-    } // end of function verifyPhone
+/*function populateList() {
+var select = document.getElementById("selectProvince");
+var provinces = ["ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "NU"];
+     //alert('hi there');
+    for(var i = 0; i < provinces.length; i++) {
+    var opt = document.createElement('option');
+    opt.innerHTML = provinces[i];
+    opt.value = provinces[i];
+    sel.appendChild(opt);
+    }
+   
+} // end of function populateList
+*/
 
 /// validate name form
 /**
@@ -47,7 +26,7 @@ function verifyPhone(){
     let txtLastName = document.getElementById('lName');
     let emailInput = document.getElementById('txtEmail');
     let selectedProvince = document.getElementById('selectProvince');
-    //let PhoneNum = document.getElementById('txtPhone');
+    let PhoneNum = document.getElementById('txtPhone');
     
     // validate first name
     if (txtFirstName.value === '') {
@@ -70,7 +49,13 @@ function verifyPhone(){
         return false;
     } // end if
     else
-    
+     // validate phone
+     if (PhoneNum.value === '') {
+        window.alert('SVP enter un numéro de téléphone valide');
+        PhoneNum.focus();
+        return false;   
+    } // end if
+    else
      // validate province
      if (selectedProvince.value === 'Selection...') {
         window.alert('SVP choisir une province');
