@@ -183,6 +183,7 @@ nav #links a:hover {
 
 .nav-link:hover {
     color: inherit;
+    background-color: white;
 }
 
 .menucard {

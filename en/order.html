@@ -101,8 +101,9 @@
                     <div class="tab-pane fade show active" id="poutines" role="tabpanel" aria-labelledby="poutine-tab">
                         <div class="card m-3 menucard" data-sf-name="Classic Poutine" data-sf-price="6">
                             <div class="card-body">
-                                <h5 class="card-title">Classic Poutine</h5>
-                                <p class="card-text">Fries, gravy and cheese curds. Simple, classic yet delicious. Comes with a soft drink.</p>
+                                <h5 class="card-title">Classic Poutine $6</h5>
+                                <p class="card-text">Fries, gravy and cheese curds. Simple, classic yet delicious. 
+                                    Comes with a soft drink.</p>
                                 <input type="checkbox" id="classicpoutine" name="classicpoutine">
                                 <label for="classicpoutine">Add six chicken nuggets for $3</label>
                                 <div class="row mt-3">
@@ -110,10 +111,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card m-3 menucard">
+                        <div class="card m-3 menucard" data-sf-name="Bacon Poutine" data-sf-price="8">
                             <div class="card-body">
-                                <h5 class="card-title">Bacon Poutine</h5>
-                                <p class="card-text">Fries, gravy and cheese curds. Sprinkled with bacon bits. Comes with a soft drink.</p>
+                                <h5 class="card-title">Bacon Poutine $8</h5>
+                                <p class="card-text">Fries, gravy and cheese curds. Sprinkled with bacon bits. Comes 
+                                    with a soft drink.</p>
                                 <input type="checkbox" id="baconpoutine" name="baconpoutine">
                                 <label for="baconpoutine">Add six chicken nuggets for $3</label>
                                 <div class="row mt-3">
@@ -121,10 +123,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card m-3 menucard">
+                        <div class="card m-3 menucard" data-sf-name="Smoked Meat Poutine" data-sf-price="10">
                             <div class="card-body">
-                                <h5 class="card-title">Smoked Meat Poutine</h5>
-                                <p class="card-text">Fries, gravy, cheese curds. Topped off with delicious slices of Montreal smoked meat. Comes with a soft drink.</p>
+                                <h5 class="card-title">Smoked Meat Poutine $10</h5>
+                                <p class="card-text">Fries, gravy, cheese curds. Topped off with delicious slices of 
+                                    Montreal smoked meat. Comes with a soft drink.</p>
                                 <input type="checkbox" id="smpoutine" name="smpoutine">
                                 <label for="smpoutine">Add six chicken nuggets for $3</label>
                                 <div class="row mt-3">
@@ -132,10 +135,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card m-3 menucard">
+                        <div class="card m-3 menucard" data-sf-name="Meat Lovers Poutine" data-sf-price="12">
                             <div class="card-body">
-                                <h5 class="card-title">Meat Lovers Poutine</h5>
-                                <p class="card-text">Fries, gravy, cheese curds. Topped off with delicious slices of smoked meat, spicy sausage and bacon bits. Comes with a soft drink.</p>
+                                <h5 class="card-title">Meat Lovers Poutine $12</h5>
+                                <p class="card-text">Fries, gravy, cheese curds. Topped off with delicious slices of 
+                                    smoked meat, spicy sausage and bacon bits. Comes with a soft drink.</p>
                                 <input type="checkbox" id="mlpoutine" name="mlpoutine">
                                 <label for="mlpoutine">Add six chicken nuggets for $3</label>
                                 <div class="row mt-3">
@@ -143,9 +147,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card m-3 menucard">
+                        <div class="card m-3 menucard" data-sf-name="Vegan Poutine" data-sf-price="12">
                             <div class="card-body">
-                                <h5 class="card-title">Vegan Poutine</h5>
+                                <h5 class="card-title">Vegan Poutine $12</h5>
                                 <p class="card-text">Fries, Vegan gravy, Vegan cheese curds. Comes with a soft drink.</p>
                                 <input type="checkbox" id="veganpoutine" name="veganpoutine">
                                 <label for="veganpoutine">Add six vegan chicken nuggets for $4</label>
@@ -156,34 +160,126 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="burgers" role="tabpanel" aria-labelledby="burger-tab">
-                        <div class="card m-3 menucard">
+                        <div class="card m-3 menucard" data-sf-name="Cheese Burger" data-sf-price="9">
                             <div class="card-body">
-                                <h5 class="card-title">Cheese Burger</h5>
-                                <p class="card-text">Old fashioned and classic staple cheese burger. Comes with a choice of fries or salad and a soft drink.</p>
+                                <h5 class="card-title">Cheese Burger $9</h5>
+                                <p class="card-text">Old fashioned and classic staple cheese burger. Comes with a choice 
+                                    of fries or salad and a soft drink.</p>
+                                <input type="checkbox" id="cheeseburger" name="cheeseburger">
+                                <label for="cheeseburger">Substitute fries for a poutine for an extra $2</label>
+                                <div class="row mt-3">
+                                    <button class="foodbutton ml-auto mr-3">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3 menucard" data-sf-name="Chili Burger" data-sf-price="10">
+                            <div class="card-body">
+                                <h5 class="card-title">Chili Burger $10</h5>
+                                <p class="card-text">This scrumptious burger sits under a chili spiced lamb patty, 
+                                    roasted bell pepper dip, onions, tomatoes and lettuce. Comes with a choice of fries 
+                                    or salad and a soft drink.</p>
+                                <input type="checkbox" id="chiliburger" name="chiliburger">
+                                <label for="chiliburger">Substitute fries for a poutine for an extra $2</label>
+                                <div class="row mt-3">
+                                    <button class="foodbutton ml-auto mr-3">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3 menucard" data-sf-name="Chicken Burger" data-sf-price="8">
+                            <div class="card-body">
+                                <h5 class="card-title">Chicken Burger $8</h5>
+                                <p class="card-text">Deep fried chicken patty served on a brioche bun with spicy mayo. 
+                                    Comes with a choice of fries or salad and a soft drink.</p>
+                                <input type="checkbox" id="chickenburger" name="chickenburger">
+                                <label for="chickenburger">Substitute fries for a poutine for an extra $2</label>
+                                <div class="row mt-3">
+                                    <button class="foodbutton ml-auto mr-3">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3 menucard" data-sf-name="Supreme Veggie Burger" data-sf-price="8">
+                            <div class="card-body">
+                                <h5 class="card-title">Supreme Veggie Burger $8</h5>
+                                <p class="card-text">Tightly packed in a bun, even vegetables light up. Spiced to 
+                                    perfection, our beans and cauliflower patty is truly a vegetarian delight. Comes 
+                                    with a choice of fries or salad and a soft drink.</p>
+                                <input type="checkbox" id="veggieburger" name="veggieburger">
+                                <label for="veggieburger">Substitute fries for a poutine for an extra $2</label>
+                                <div class="row mt-3">
+                                    <button class="foodbutton ml-auto mr-3">Add to cart</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="hotdogs" role="tabpanel" aria-labelledby="hotdog-tab">
-                        <div class="card m-3 menucard">
+                        <div class="card m-3 menucard" data-sf-name="Steamed Hot Dog" data-sf-price="2">
                             <div class="card-body">
-                                <h5 class="card-title">Steamed Bun Hot Dog</h5>
+                                <h5 class="card-title">Steamed Bun Hot Dog $2</h5>
                                 <p class="card-text">Classic Beef hot dog on a steamed bun.</p>
+                                <div class="row mt-3">
+                                    <button class="foodbutton ml-auto mr-3">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3 menucard" data-sf-name="Grilled Hot Dog" data-sf-price="2">
+                            <div class="card-body">
+                                <h5 class="card-title">Grilled Bun Hot Dog $2</h5>
+                                <p class="card-text">Classic Beef hot dog on a grilled bun.</p>
+                                <div class="row mt-3">
+                                    <button class="foodbutton ml-auto mr-3">Add to cart</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drink-tab">
-                        <div class="card m-3 menucard">
+                        <div class="card m-3 menucard" data-sf-name="Soft Drink" data-sf-price="1">
                             <div class="card-body">
-                                <h5 class="card-title">Soft Drink (Coke, Pepsi, 7UP) </h5>
-                                <p class="card-text">Text</p>
+                                <h5 class="card-title">Soft Drink (Coke, Pepsi, 7UP)</h5>
+                                <div class="row mt-3">
+                                    <button class="foodbutton ml-auto mr-3">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3 menucard" data-sf-name="Bottled Water" data-sf-price="1">
+                            <div class="card-body">
+                                <h5 class="card-title">Bottled Water</h5>
+                                <div class="row mt-3">
+                                    <button class="foodbutton ml-auto mr-3">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3 menucard" data-sf-name="Orange Juice" data-sf-price="1">
+                            <div class="card-body">
+                                <h5 class="card-title">Orange Juice</h5>
+                                <div class="row mt-3">
+                                    <button class="foodbutton ml-auto mr-3">Add to cart</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="sides" role="tabpanel" aria-labelledby="sides-tab">
-                        <div class="card m-3 menucard">
+                        <div class="card m-3 menucard" data-sf-name="Fries" data-sf-price="2">
                             <div class="card-body">
                                 <h5 class="card-title">Fries</h5>
-                                <p class="card-text">Text</p>
+                                <div class="row mt-3">
+                                    <button class="foodbutton ml-auto mr-3">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3 menucard" data-sf-name="Onion Rings" data-sf-price="2">
+                            <div class="card-body">
+                                <h5 class="card-title">Onion Rings</h5>
+                                <div class="row mt-3">
+                                    <button class="foodbutton ml-auto mr-3">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-3 menucard" data-sf-name="Cheese Sticks" data-sf-price="2">
+                            <div class="card-body">
+                                <h5 class="card-title">Cheese Sticks</h5>
+                                <div class="row mt-3">
+                                    <button class="foodbutton ml-auto mr-3">Add to cart</button>
+                                </div>
                             </div>
                         </div>
                     </div>
