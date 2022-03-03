@@ -1,4 +1,8 @@
+
+/* main weather function */
+/*jshint esversion: 6 */
 let weather = {
+/*Get api from Openweathermap*/    
     apiKey: "0c3f554666e84633449ac7415652fca1",
     fetchWeather: function () {
       fetch(
@@ -8,11 +12,10 @@ let weather = {
         })
         .then((data) => this.displayWeather(data));
     },
+    /* main display for the weather */
     displayWeather: function (data) {
-      const { name } = data;
       const { icon, description } = data.weather[0];
-      const { temp, humidity } = data.main;
-      const { speed } = data.wind;
+      const { temp} = data.main;
       document.querySelector(".city").innerText = "Weather in Montreal";
       document.querySelector(".icon").src =
         "https://openweathermap.org/img/wn/" + icon + ".png";
