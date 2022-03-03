@@ -1,7 +1,7 @@
 const cart = {
     items: [],
     total: 0
-}
+};
 
 let quoteCard = $("#cart");
 
@@ -15,7 +15,7 @@ for(let i = 0; i < foodbuttons.length; i++){
 
         cart.items.push({name: foodName, price: foodPrice});
         updateCart();
-    })
+    });
 }
 
 function updateCart() {
