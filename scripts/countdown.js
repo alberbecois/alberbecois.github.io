@@ -1,5 +1,5 @@
 // JavaScript Document
-
+/*jshint unused:false*/
 /* 1. eventClock() - start up function - displays countdown in days, hours, 
     minutes, seconds to target date
    2. calculateDays - returns the number of days left between the current
