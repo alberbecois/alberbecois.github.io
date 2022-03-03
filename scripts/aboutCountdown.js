@@ -1,4 +1,4 @@
-
+/*jshint unused:false*/
 //function to display two clocks
 function eventClock() {
     
