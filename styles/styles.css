@@ -184,3 +184,51 @@ nav #links a:hover {
 .nav-link:hover {
     color: inherit;
 }
+
+.menucard {
+    border-color: rgb(34,29,23);
+    border-width: 2px;
+}
+
+#cart-header {
+    font-size: 22pt;
+    text-align: right;
+    padding-top: 18px;
+}
+
+#cart {
+    margin-top: 30px;
+}
+
+label {
+    margin-left: 8px;
+}
+
+#cartitems table tr td {
+    padding-left: 20px;
+}
+
+#total {
+    border-top: 2px solid rgb(34,29,23);
+}
+
+#shoppingcart {
+    width: 125px;
+}
+
+.foodbutton {
+    background-color: rgb(255, 223, 109);
+    border: 2px solid rgb(34,29,23);
+    color: rgb(34,29,23);
+}
+
+.orderbutton {
+    background-color: rgb(255, 223, 109);
+    border: 2px solid rgb(34,29,23);
+    color: rgb(34,29,23);
+}
+
+.foodbutton:hover {
+    background-color: rgb(34,29,23);
+    color: white;
+}
