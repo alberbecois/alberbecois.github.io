@@ -250,3 +250,12 @@ label {
     background-color: rgb(34,29,23);
     color: white;
 }
+
+.bannerclock {
+    background-color: rgb(34,29,23);
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16pt;
+    width: 25px;
+    margin-left: 10px;
+}
