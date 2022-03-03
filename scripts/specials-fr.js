@@ -1,6 +1,11 @@
 
 /*jshint esversion: 6 */
 /*jshint unused:false*/
+/*    
+ *    WC4 Team Project
+ *    Author: Emma Middleton, Joshua Knutson, Mobin Syed, Johan Elder
+ *    Date: March 2, 2022
+ */
 /* function to populate the province dropdown menu
 */
 function populateList() {
@@ -29,13 +34,8 @@ function populateList() {
         let txtFirstName = document.getElementById('fName');
         let txtLastName = document.getElementById('lName');
         let emailInput = document.getElementById('txtEmail');
-        //var emailRGEX = /^[\w\-\.\+]+\@[a-zA-Z0-9\. \-]+\.[a-zA-z0-9]{2,4}$/;
-        //var emailResult = emailRGEX.test(emailInput);
         let selectedProvince = document.getElementById('selectProvince');
         let phoneInput = document.getElementById('txtPhone');
-        //var phoneLength = phoneNum.length;
-        //var phoneRGEX = /^\(?[\d]{3}\)?[\s-]?[\d]{3}[\s-]?[\d]{4}$/;
-        //var phoneResult = phoneRGEX.test(phoneNum);
         
         // validate first name
         if (txtFirstName.value === '') {

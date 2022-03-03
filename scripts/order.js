@@ -1,4 +1,9 @@
 /*globals $ */
+/*    
+ *    WC4 Team Project
+ *    Author: Emma Middleton, Joshua Knutson, Mobin Syed, Johan Elder
+ *    Date: March 2, 2022
+ */
 const cart = {
     items: [],
     total: 0

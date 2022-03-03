@@ -3,6 +3,11 @@
 /*jshint unused:false*/
 /* function to populate the province dropdown menu
 */
+/*    
+ *    WC4 Team Project
+ *    Author: Emma Middleton, Joshua Knutson, Mobin Syed, Johan Elder
+ *    Date: March 2, 2022
+ */
 function populateList() {
 //create the array for the dropdown menu list
 var provinces = ["Select...", "ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "NS", "PEI", "NU"];

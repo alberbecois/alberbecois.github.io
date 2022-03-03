@@ -1,11 +1,16 @@
 // JavaScript Document
 /*jshint unused:false*/
+/*    
+ *    WC4 Team Project
+ *    Author: Emma Middleton, Joshua Knutson, Mobin Syed, Johan Elder
+ *    Date: March 2, 2022
+ */
+
 /* 1. eventClock() - start up function - displays countdown in days, hours, 
     minutes, seconds to target date
    2. calculateDays - returns the number of days left between the current
     date and target date
 */
-
 
 function eventClock() {
     

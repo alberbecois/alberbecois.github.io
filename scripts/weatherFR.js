@@ -1,5 +1,10 @@
 /* main weather function */
 /*jshint esversion: 6 */
+/*    
+ *    WC4 Team Project
+ *    Author: Emma Middleton, Joshua Knutson, Mobin Syed, Johan Elder
+ *    Date: March 2, 2022
+ */
 let weather = {
     /*Get api from Openweathermap*/ 
     apiKey: "0c3f554666e84633449ac7415652fca1",
