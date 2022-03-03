@@ -141,6 +141,23 @@ nav #links a:hover {
     text-align: right;
 }
 
+#event {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10%;
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+.eventcard {
+    background: rgb(34,29,23);
+    color: white;
+    text-align: center;
+}
+
 .temp {
     margin-bottom: 0;
     border: none;
