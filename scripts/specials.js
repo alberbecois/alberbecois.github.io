@@ -19,24 +19,6 @@ var provinces = ["Select...", "ON", "QC", "SK", "AB", "BC", "NWT", "YK", "NB", "
     document.getElementById('selectProvince').innerHTML = results;
 } // end of function populateList
 
-// function to verify phone number
-function verifyPhone(){
-    var phoneNum = document.getElementById("txtPhone");
-    
-    phoneNum.addEventListener('input', () => {
-      phoneNum.setCustomValidity('');
-      phoneNum.checkValidity();
-    });
-    
-    phoneNum.addEventListener('invalid', () => {
-      if(phoneNum.value === '') {
-        phoneNum.setCustomValidity('Enter phone number!');
-      } else {
-        phoneNum.setCustomValidity('Enter phone number in this format: 123-456-7890');
-      }
-    });
-    } // end of function verifyPhone
-
 /// validate name form
 /**
  *  validates user data entry
@@ -49,7 +31,7 @@ function verifyPhone(){
     //var emailRGEX = /^[\w\-\.\+]+\@[a-zA-Z0-9\. \-]+\.[a-zA-z0-9]{2,4}$/;
     //var emailResult = emailRGEX.test(emailInput);
     let selectedProvince = document.getElementById('selectProvince');
-    //let phoneNum = document.getElementById('txtPhone');
+    let phoneInput = document.getElementById('txtPhone');
     //var phoneLength = phoneNum.length;
     //var phoneRGEX = /^\(?[\d]{3}\)?[\s-]?[\d]{3}[\s-]?[\d]{4}$/;
     //var phoneResult = phoneRGEX.test(phoneNum);
@@ -70,23 +52,23 @@ function verifyPhone(){
     else
     // validate email address
     if (emailInput.value === '') {
-        window.alert('You must enter a valid email address');
+        window.alert('You must enter an email address');
         emailInput.focus();
         return false;
     } // end if
     else
     // validate phone
-    if (PhoneNum.value === '') {
-      window.alert('You must enter a valid phone number');
-      PhoneNum.focus();
+    if (phoneInput.value === '') {
+      window.alert('You must enter a phone number');
+      phoneInput.focus();
       return false;   
     } // end if
     else
-     // validate province
-     if (selectedProvince.value === 'Select...') {
-        window.alert('You must select a province');
-        selectedProvince.focus();
-        return false;   
+    // validate province
+    if (selectedProvince.value === 'Select...') {
+      window.alert('You must select a province');
+      selectedProvince.focus();
+      return false;   
     } // end if
     else {
         return true;
@@ -94,3 +76,21 @@ function verifyPhone(){
 
     
 } // end function validateForm
+
+// function to verify phone number
+function verifyPhone(){
+  var phoneNum = document.getElementById("txtPhone");
+  
+  phoneNum.addEventListener('input', () => {
+    phoneNum.setCustomValidity('');
+    phoneNum.checkValidity();
+  });
+  
+  phoneNum.addEventListener('invalid', () => {
+    if(phoneNum.value === '') {
+      phoneNum.setCustomValidity('Enter phone number!');
+    } else {
+      phoneNum.setCustomValidity('Enter phone number in this format: 123-456-7890');
+    }
+  });
+  } // end of function verifyPhone
