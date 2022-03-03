@@ -21,7 +21,7 @@
         <link href="../styles/styles.css" type="text/css" rel="stylesheet">
         
         <!-- Scripts -->
-        <script src="../scripts/weather.js" defer></script>
+        <script src="../scripts/weatherFR.js" defer></script>
         <script src="../scripts/specials.js"></script>
         <script>
             //create startup() function
@@ -39,18 +39,18 @@
                 <div class="row">
                     <div class="col-md-6">
                         <img src="../images/saucyfrites_white.png" id="logo" alt="image du logo">
-                    </div>
-                </div>
-                <!-- Weather API AJAX/JQUERY-->
-                <div class="col-md-6">    
-                    <div id="Weather">
-                        <div class="weathercard">
-                            <div class="weather loading">
-                                <h2 class="city"></h2>
-                                <h1 class="temp">°C</h1>
-                                <div class="flex">
-                                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
-                                    <div class="description"></div>
+                    </div>    
+                    <div class="col-md-6">
+                        <!-- Weather API AJAX/JQUERY-->
+                        <div id="Weather">
+                            <div class="weathercard">
+                                <div class="weather loading">
+                                    <h2 class="city"></h2>
+                                    <h1 class="temp">°C</h1>
+                                    <div class="flex">
+                                        <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                                        <div class="description"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -66,14 +66,13 @@
             </button>
             <div class="collapse navbar-collapse" id="links">
                 <div class="container navbar-nav">
-                    <a href="../en/index.html" class="nav-item nav-link">Accueil</a>
-                    <a href="../en/about.html" class="nav-item nav-link">À propos de nous</a>
-                    <a href="../en/menu.html" class="nav-item nav-link">Le menu</a>
-                    <a href="../en/specials.html" class="nav-item nav-link currentpage">Les spéciaux</a>
-                    <a href="../en/contact.html" class="nav-item nav-link">Nous joindre</a>
-                    <a href="../en/order.html" class="nav-item nav-link">Order</a>
+                    <a href="../fr/accueil.html" class="nav-item nav-link">Accueil</a>
+                    <a href="../fr/apropos.html" class="nav-item nav-link">À propos de nous</a>
+                    <a href="../fr/menu.html" class="nav-item nav-link">Le menu</a>
+                    <a href="../fr/specials.html" class="nav-item nav-link currentpage">Les spéciaux</a>
+                    <a href="../fr/contact.html" class="nav-item nav-link">Nous joindre</a>
                     <a href="../fr/commande.html" class="nav-item nav-link">Commandez</a>
-                    <a href="../fr/specials.html" class="nav-item nav-link ml-md-auto"><u>EN</u>/FR</a>
+                    <a href="../en/index.html" class="nav-item nav-link ml-md-auto">EN/<u>FR</u></a>
                 </div>
             </div>
         </nav>
