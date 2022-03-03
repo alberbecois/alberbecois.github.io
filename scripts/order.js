@@ -1,3 +1,4 @@
+/*globals $ */
 const cart = {
     items: [],
     total: 0
